@@ -6,9 +6,11 @@ const From = () => {
     const[input,setInput]=useState('')
     const userData = {};
    
-    
     const setData = ()=>{
-       
+        let submit = document.getElementById('submit')
+        let container = document.getElementById('container')
+        submit.style.visibility="visible";
+        container.style.visibility="hidden";
         userData.firstname = input.fname;
         userData.lastname = input.lname;
         userData.email = input.email
@@ -20,12 +22,13 @@ const From = () => {
         console.log(userData);
         
     }
+    
    
   return (
     <div>
       <div className="container">
       <div className="container-box">
-        <div className="container-from">
+        <div className="container-from" id='container'>
             <div className="from-input">
                 <h3 className='mt-2'>Contact form</h3>
                 <p>Please fill in your information and we'll be sending your order in no time</p>
@@ -58,7 +61,14 @@ const From = () => {
         </div>
       </div>
       </div>
-     
+      
+   <div className="submitted-success" id='submit'>
+    <p>submitted success...</p>
+   <div className="button-group">
+    <button onClick={()=>window.location.reload()}>contiune</button>
+    <button onClick={()=>window.close()}>close</button>
+   </div>
+   </div>
     </div>
   )
 }

@@ -99,3 +99,22 @@ button {
     font-size: 0.8rem;
     font-weight: bold;
 }
+
+.submitted-success {
+    width: 400px;
+    height: 120px;
+    background: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    visibility: hidden;
+    position: absolute;
+    margin: -29rem 40rem;
+}
+
+.submitted-success p {
+    color: black;
+    text-transform: capitalize;
+}
