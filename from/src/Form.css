@@ -19,7 +19,7 @@
     height: 600px;
     display: flex;
     justify-content: center;
-    background-color: aqua;
+    background-color: rgb(53, 216, 224);
 }
 
 .container .container-box .container-from {
@@ -80,6 +80,7 @@
 }
 
 .message textarea {
+    width: 430px;
     padding: 5px 10px;
     border-radius: 3px;
     border: none;
@@ -91,7 +92,7 @@ button {
     padding: 0.4rem 1.4rem;
     border: none;
     outline: none;
-    background-color: aqua;
+    background-color: rgb(53, 216, 224);
     border: 2px solid white;
     border-radius: 2px;
     text-transform: uppercase;

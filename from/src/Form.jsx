@@ -5,8 +5,10 @@ import { useState } from 'react'
 const From = () => {
     const[input,setInput]=useState('')
     const userData = {};
+   
     
     const setData = ()=>{
+       
         userData.firstname = input.fname;
         userData.lastname = input.lname;
         userData.email = input.email
@@ -16,6 +18,7 @@ const From = () => {
         userData.messagesubject = input.messagesubject;
         userData.message = input.message;
         console.log(userData);
+        
     }
    
   return (
