@@ -1,10 +1,11 @@
 import React from 'react'
-import './From.css'
+import './Form.css'
 import { useState } from 'react'
 
 const From = () => {
     const[input,setInput]=useState('')
     const userData = {};
+    
     const setData = ()=>{
         userData.firstname = input.fname;
         userData.lastname = input.lname;
@@ -54,6 +55,7 @@ const From = () => {
         </div>
       </div>
       </div>
+     
     </div>
   )
 }
